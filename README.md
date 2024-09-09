@@ -1,3 +1,13 @@
+To build the application:
+1. Install dependencies: npm install
+2. Make a build: npm run build
+
+To run the application:
+1. Install dependencies (if not already installed): npm install
+2. Run the application: npm run dev
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

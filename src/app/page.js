@@ -53,7 +53,7 @@ export default function Home() {
   const isOptionsSetted = Boolean(selectedMake && selectedYear);
 
   return (
-    <div className='flex min-h-screen justify-center items-center'>
+    <div className='flex min-h-screen px-3 justify-center items-center '>
       <div className='flex flex-col items-center'>
         {loading ? (
           <p>Loading...</p>
@@ -61,9 +61,9 @@ export default function Home() {
           <p className='text-red-500'>Error: {error}</p>
         ) : (
           <>
-            <div className='flex gap-x-20 pb-20'>
+            <div className='flex flex-col gap-y-4 pb-20 md:flex-row gap-x-20'>
               <div className='flex flex-col items-center'>
-                <h1 className='text-2xl'>Select Vehicle Make</h1>
+                <h2 className='text-2xl'>Select Vehicle Make</h2>
                 <select
                   className='w-80 border-2 text-center'
                   value={selectedMake}
@@ -79,7 +79,7 @@ export default function Home() {
               </div>
 
               <div className='flex flex-col items-center'>
-                <h1 className='text-2xl'>Select Year</h1>
+                <h2 className='text-2xl'>Select Year</h2>
                 <select
                   className='w-80 border-2 text-center'
                   value={selectedYear}
